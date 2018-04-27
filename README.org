@@ -1,0 +1,9 @@
+1. Folder =sc= contains SuperCollider extensions that enable it to talk to EMACS.  Place this folder inside the path obtained by evaluating this on SuperCollider:
+
+#+BEGIN_SRC sclang
+Platform.userExtensionDir;
+#+END_SRC
+
+Then recompile SC Lang to load the extensions.
+
+2. Folder =sclang= contains the emacs-lisp code needed to make emacs talk to supercollider, and to define the sclang mode used in working with SuperCollider buffers.  Place this folder anywhere, but make sure you add it to the emacs list of load paths.
